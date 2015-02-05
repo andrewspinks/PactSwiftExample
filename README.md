@@ -18,7 +18,9 @@ See the Pact Swift library for more details. [PactConsumerSwift library][pact-co
   Modify the Test Target's scheme to add scripts to start and stop the pact server when tests are run.
   * From the menu `Product` -> `Scheme` -> `Edit Scheme`
   * Under Test, Pre-actions add a Run Script Action
-    - Add a Run Script Action with the following _NB: the PATH variable should be set to the location of the pact-mock-service binary - you can find the path using `which pact-mock-service`_
+    Add a Run Script Action with the following
+    _NB: the PATH variable should be set to the location of the pact-mock-service binary - you can find the path using `which pact-mock-service`_
+
     ```bash
     PATH=/path/to/pact-mock-service/binary:$PATH
     "$SRCROOT"/Carthage/Checkouts/pact-consumer-swift/scripts/start_server.sh
@@ -27,6 +29,7 @@ See the Pact Swift library for more details. [PactConsumerSwift library][pact-co
 
   ![](http://i.imgur.com/o4tXzGK.png)
   * Under Test, Post-actions add a Run Script Action to stop the pact service.
+
     ```bash
     PATH=/path/to/pact-mock-service/binary:$PATH
     "$SRCROOT"/Carthage/Checkouts/pact-consumer-swift/scripts/stop_server.sh
