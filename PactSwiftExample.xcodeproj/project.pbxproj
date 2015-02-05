@@ -13,6 +13,10 @@
 		A150D8A41A830E41006E7C2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A31A830E41006E7C2F /* Images.xcassets */; };
 		A150D8A71A830E41006E7C2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A51A830E41006E7C2F /* LaunchScreen.xib */; };
 		A150D8B31A830E41006E7C2F /* PactSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D8B21A830E41006E7C2F /* PactSwiftExampleTests.swift */; };
+		A150D8BD1A831561006E7C2F /* HelloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D8BC1A831561006E7C2F /* HelloClient.swift */; };
+		A150D8BF1A8315B9006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
+		A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */; };
+		A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,9 @@
 		A150D8AC1A830E41006E7C2F /* PactSwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PactSwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D8B11A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A150D8B21A830E41006E7C2F /* PactSwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PactSwiftExampleTests.swift; sourceTree = "<group>"; };
+		A150D8BC1A831561006E7C2F /* HelloClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloClient.swift; sourceTree = "<group>"; };
+		A150D8BE1A8315B9006E7C2F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A150D8BF1A8315B9006E7C2F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */,
+				A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,8 @@
 		A150D88E1A830E41006E7C2F = {
 			isa = PBXGroup;
 			children = (
+				A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */,
+				A150D8BE1A8315B9006E7C2F /* Alamofire.framework */,
 				A150D8991A830E41006E7C2F /* PactSwiftExample */,
 				A150D8AF1A830E41006E7C2F /* PactSwiftExampleTests */,
 				A150D8981A830E41006E7C2F /* Products */,
@@ -77,6 +89,7 @@
 		A150D8991A830E41006E7C2F /* PactSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				A150D8BC1A831561006E7C2F /* HelloClient.swift */,
 				A150D89C1A830E41006E7C2F /* AppDelegate.swift */,
 				A150D89E1A830E41006E7C2F /* ViewController.swift */,
 				A150D8A01A830E41006E7C2F /* Main.storyboard */,
@@ -122,6 +135,7 @@
 				A150D8931A830E41006E7C2F /* Sources */,
 				A150D8941A830E41006E7C2F /* Frameworks */,
 				A150D8951A830E41006E7C2F /* Resources */,
+				A150D8C01A8315C1006E7C2F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -139,6 +153,7 @@
 				A150D8A81A830E41006E7C2F /* Sources */,
 				A150D8A91A830E41006E7C2F /* Frameworks */,
 				A150D8AA1A830E41006E7C2F /* Resources */,
+				A150D8C31A831603006E7C2F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,12 +222,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A150D8C01A8315C1006E7C2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+		};
+		A150D8C31A831603006E7C2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PactConsumerSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A150D8931A830E41006E7C2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A150D89F1A830E41006E7C2F /* ViewController.swift in Sources */,
+				A150D8BD1A831561006E7C2F /* HelloClient.swift in Sources */,
 				A150D89D1A830E41006E7C2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +386,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PactSwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PactSwiftExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +417,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -380,6 +437,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = PactSwiftExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

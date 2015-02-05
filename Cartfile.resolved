@@ -1,2 +1,2 @@
-github "Alamofire/Alamofire"
+github "Alamofire/Alamofire" "1.1.4"
 github "DiUS/pact-consumer-swift" "845e71c903e04eb1d68354a3b5c952f85eaf224c"
