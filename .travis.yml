@@ -4,7 +4,7 @@ before_install:
 - scripts/import_keychain.sh
 - brew update
 - brew install carthage
-- carthage bootstrap
+- carthage update
 - gem instal xcpretty
 - gem install pact-mock_service -v 0.2.4
 script:

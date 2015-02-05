@@ -4,7 +4,6 @@ import PactSwiftExample
 import PactConsumerSwift
 
 class PactSwiftExampleTests: XCTestCase {
-
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,11 +18,11 @@ class PactSwiftExampleTests: XCTestCase {
       var hello = "not Goodbye"
       var helloProvider = MockService(provider: "Hello Provider", consumer: "Hello Consumer")
       let expectation = expectationWithDescription("Responds with hello")
-      
+
       helloProvider.uponReceiving("a request for hello")
         .withRequest(PactHTTPMethod.Get, path: "/sayHello")
         .willRespondWith(200, headers: ["Content-Type": "application/json"], body: [ "reply": "Hello"])
-      
+
       //Run the tests
       helloProvider.run ( { (complete) -> Void in
         HelloClient(baseUrl: helloProvider.baseUrl).sayHello { (response) in
@@ -35,8 +34,7 @@ class PactSwiftExampleTests: XCTestCase {
           XCTAssertEqual(verification, PactVerificationResult.Passed)
           expectation.fulfill()
       })
-      
+
       waitForExpectationsWithTimeout(10) { (error) in }
     }
-
 }
