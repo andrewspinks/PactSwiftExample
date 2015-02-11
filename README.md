@@ -6,13 +6,13 @@ See the Pact Swift library for more details. [PactConsumerSwift library][pact-co
 ## Installation with Carthage
 
 ### Install the [pact-mock_service](https://github.com/bethesque/pact-mock_service)
-  `gem install pact-mock_service -v 0.2.4`
+  `gem install pact-mock_service -v 0.3.0`
 
 ### Add the PactConsumerSwift library to your project
 - Add `github "DiUS/pact-consumer-swift` to your Cartfile
 - Follow the Carthage guidelines for building and adding a framework with Carthage: [Carthage](https://github.com/Carthage/Carthage)
-- Add the PactConsumerSwift.framework to your test target
-- For iOS projects, you must add a run script to copy the framework to the correct location. See the Carthage documentation for more info.
+- Add the `PactConsumerSwift.framework`, `Alamofire.framework` and `BrightFutures.framework` to your test target
+- For iOS projects, you must add a run script to copy the frameworks to the correct location. See the Carthage documentation for more info.
 
 #### Setup your Test Target to run the pact server before the tests are run
   Modify the Test Target's scheme to add scripts to start and stop the pact server when tests are run.

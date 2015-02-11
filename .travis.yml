@@ -6,7 +6,7 @@ before_install:
 - brew install carthage
 - carthage update
 - gem instal xcpretty
-- gem install pact-mock_service -v 0.2.4
+- gem install pact-mock_service -v 0.3.0
 script:
 - set -o pipefail
 - xcodebuild -project PactSwiftExample.xcodeproj -scheme PactSwiftExample clean test -sdk iphonesimulator | xcpretty -c
