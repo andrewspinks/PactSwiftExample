@@ -35,31 +35,10 @@ class PactSwiftExampleTests: XCTestCase {
         XCTAssertEqual(response, "Hello")
         complete()
       }
-    }, result: {
+    }, verification: {
       (verification) -> Void in
       // Important! This ensures all expected HTTP requests were actually made.
       XCTAssertEqual(verification, PactVerificationResult.Passed)
-      expectation.fulfill()
-    })
-
-    waitForExpectationsWithTimeout(10) { (error) in }
-  }
-
-  func testFailsOnVerificationFailure() {
-    var verificationResult = PactVerificationResult.Passed
-    var helloProvider = MockService(provider: "Hello Provider", consumer: "Hello Consumer")
-    let expectation = expectationWithDescription("Fails verification")
-
-    helloProvider.uponReceiving("a request for hello")
-                  .withRequest(PactHTTPMethod.Get, path: "/sayHello")
-                  .willRespondWith(200, headers: ["Content-Type": "application/json"], body: [ "reply": "Hello"])
-
-    //Run the tests
-    helloProvider.run ( { (complete) -> Void in
-      complete()
-    }, result: { (verification) -> Void in
-      verificationResult = verification
-      XCTAssertEqual(verification, PactVerificationResult.Failed)
       expectation.fulfill()
     })
 
@@ -82,7 +61,7 @@ class PactSwiftExampleTests: XCTestCase {
         XCTAssertEqual(response[0], "Sue")
         complete()
       }
-    }, result: {
+    }, verification: {
       (verification) -> Void in
       XCTAssertEqual(verification, PactVerificationResult.Passed)
       expectation.fulfill()
@@ -111,7 +90,7 @@ class PactSwiftExampleTests: XCTestCase {
         XCTAssertFalse(true)
         complete()
       })
-    }, result: {
+    }, verification: {
       (verification) -> Void in
       // Important! This ensures all expected HTTP requests were actually made.
       XCTAssertEqual(verification, PactVerificationResult.Passed)
@@ -141,7 +120,7 @@ class PactSwiftExampleTests: XCTestCase {
         XCTAssertEqual(error, 404)
         complete()
       })
-    }, result: {
+    }, verification: {
       (verification) -> Void in
       // Important! This ensures all expected HTTP requests were actually made.
       XCTAssertEqual(verification, PactVerificationResult.Passed)

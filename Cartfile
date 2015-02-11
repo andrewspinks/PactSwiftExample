@@ -1,2 +1,2 @@
 github "Alamofire/Alamofire"
-github "DiUS/pact-consumer-swift" "HEAD"
+github "DiUS/pact-consumer-swift" "master"

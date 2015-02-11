@@ -1,2 +1,3 @@
 github "Alamofire/Alamofire" "1.1.4"
-github "DiUS/pact-consumer-swift" "845e71c903e04eb1d68354a3b5c952f85eaf224c"
+github "Thomvis/BrightFutures" "986398167fe6d315b42718e593b6e35412335633"
+github "DiUS/pact-consumer-swift" "b79cd63ae5bb0631caf68058c55bc3e43e94e5fd"
