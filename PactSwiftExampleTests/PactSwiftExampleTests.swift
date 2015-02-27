@@ -25,8 +25,8 @@ class PactSwiftExampleTests: XCTestCase {
   func testItSaysHello() {
     var hello = "not Goodbye"
     helloProvider!.uponReceiving("a request for hello")
-                  .withRequest(PactHTTPMethod.Get, path: "/sayHello")
-                  .willRespondWith(200, headers: ["Content-Type": "application/json"], body: ["reply": "Hello"])
+                  .withRequest(method:.GET, path: "/sayHello")
+                  .willRespondWith(status: 200, headers: ["Content-Type": "application/json"], body: ["reply": "Hello"])
 
     //Run the tests
     helloProvider!.run{ (testComplete) -> Void in
@@ -42,8 +42,8 @@ class PactSwiftExampleTests: XCTestCase {
   func test404Error() {
     helloProvider!.given("I have no friends")
                   .uponReceiving("a request to unfriend")
-                  .withRequest(PactHTTPMethod.Put, path: "/unfriendMe")
-                  .willRespondWith(404, body: "No friends")
+                  .withRequest(method:.PUT, path: "/unfriendMe")
+                  .willRespondWith(status: 404, body: "No friends")
 
     //Run the tests
     helloProvider!.run{ (testComplete) -> Void in
