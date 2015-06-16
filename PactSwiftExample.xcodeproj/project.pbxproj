@@ -14,10 +14,8 @@
 		A150D8A71A830E41006E7C2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A51A830E41006E7C2F /* LaunchScreen.xib */; };
 		A150D8B31A830E41006E7C2F /* PactSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D8B21A830E41006E7C2F /* PactSwiftExampleTests.swift */; };
 		A150D8BD1A831561006E7C2F /* HelloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D8BC1A831561006E7C2F /* HelloClient.swift */; };
-		A150D8BF1A8315B9006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
-		A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */; };
-		A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
-		A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */; };
+		CEAC74FB67D4848C2C182D1D /* Pods_PactSwiftExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C361B3E5F597D8218B5821FF /* Pods_PactSwiftExampleTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DC06C2477B010DE93AB3D10B /* Pods_PactSwiftExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7BDDBC96CC6BD3D6201F52 /* Pods_PactSwiftExample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B8BE67EDE0310E0CBDBFA5B /* Pods-PactSwiftExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PactSwiftExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PactSwiftExample/Pods-PactSwiftExample.release.xcconfig"; sourceTree = "<group>"; };
+		6A1ED70F94FC1076BF90DE9A /* Pods-PactSwiftExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PactSwiftExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PactSwiftExampleTests/Pods-PactSwiftExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C7BDDBC96CC6BD3D6201F52 /* Pods_PactSwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PactSwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B88E77085A23A9114FB5263 /* Pods-PactSwiftExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PactSwiftExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PactSwiftExampleTests/Pods-PactSwiftExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A150D8971A830E41006E7C2F /* PactSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D89B1A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A150D89C1A830E41006E7C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,9 +44,8 @@
 		A150D8B11A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A150D8B21A830E41006E7C2F /* PactSwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PactSwiftExampleTests.swift; sourceTree = "<group>"; };
 		A150D8BC1A831561006E7C2F /* HelloClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloClient.swift; sourceTree = "<group>"; };
-		A150D8BE1A8315B9006E7C2F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
-		A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		C361B3E5F597D8218B5821FF /* Pods_PactSwiftExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PactSwiftExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F946F3CDE1B40D36E22E310B /* Pods-PactSwiftExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PactSwiftExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PactSwiftExample/Pods-PactSwiftExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A150D8BF1A8315B9006E7C2F /* Alamofire.framework in Frameworks */,
+				DC06C2477B010DE93AB3D10B /* Pods_PactSwiftExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,24 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */,
-				A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */,
-				A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */,
+				CEAC74FB67D4848C2C182D1D /* Pods_PactSwiftExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66AC4BAA5393C4E1E4C797E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C361B3E5F597D8218B5821FF /* Pods_PactSwiftExampleTests.framework */,
+				7C7BDDBC96CC6BD3D6201F52 /* Pods_PactSwiftExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A150D88E1A830E41006E7C2F = {
 			isa = PBXGroup;
 			children = (
-				A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */,
-				A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */,
-				A150D8BE1A8315B9006E7C2F /* Alamofire.framework */,
 				A150D8991A830E41006E7C2F /* PactSwiftExample */,
 				A150D8AF1A830E41006E7C2F /* PactSwiftExampleTests */,
 				A150D8981A830E41006E7C2F /* Products */,
+				A93D8658AF3AACD43769D57D /* Pods */,
+				66AC4BAA5393C4E1E4C797E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +136,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A93D8658AF3AACD43769D57D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B88E77085A23A9114FB5263 /* Pods-PactSwiftExampleTests.debug.xcconfig */,
+				6A1ED70F94FC1076BF90DE9A /* Pods-PactSwiftExampleTests.release.xcconfig */,
+				F946F3CDE1B40D36E22E310B /* Pods-PactSwiftExample.debug.xcconfig */,
+				1B8BE67EDE0310E0CBDBFA5B /* Pods-PactSwiftExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,10 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A150D8B61A830E41006E7C2F /* Build configuration list for PBXNativeTarget "PactSwiftExample" */;
 			buildPhases = (
+				3A1CA15E2DFBE839FD6BE62B /* Check Pods Manifest.lock */,
 				A150D8931A830E41006E7C2F /* Sources */,
 				A150D8941A830E41006E7C2F /* Frameworks */,
 				A150D8951A830E41006E7C2F /* Resources */,
-				A150D8C01A8315C1006E7C2F /* ShellScript */,
+				4E1A06DF5473F64938339FBE /* Embed Pods Frameworks */,
+				5A3464118374E37004F0E5CC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,10 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A150D8B91A830E41006E7C2F /* Build configuration list for PBXNativeTarget "PactSwiftExampleTests" */;
 			buildPhases = (
+				3E69E1B39B1A772BE955E7F1 /* Check Pods Manifest.lock */,
 				A150D8A81A830E41006E7C2F /* Sources */,
 				A150D8A91A830E41006E7C2F /* Frameworks */,
 				A150D8AA1A830E41006E7C2F /* Resources */,
-				A150D8C31A831603006E7C2F /* ShellScript */,
+				EAAB9971AB6E79F75812545B /* Embed Pods Frameworks */,
+				E42D774932AECC5F6C792143 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,35 +249,95 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A150D8C01A8315C1006E7C2F /* ShellScript */ = {
+		3A1CA15E2DFBE839FD6BE62B /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-		A150D8C31A831603006E7C2F /* ShellScript */ = {
+		3E69E1B39B1A772BE955E7F1 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PactConsumerSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 			);
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E1A06DF5473F64938339FBE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PactSwiftExample/Pods-PactSwiftExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A3464118374E37004F0E5CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PactSwiftExample/Pods-PactSwiftExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42D774932AECC5F6C792143 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PactSwiftExampleTests/Pods-PactSwiftExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAAB9971AB6E79F75812545B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PactSwiftExampleTests/Pods-PactSwiftExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -389,6 +471,7 @@
 		};
 		A150D8B71A830E41006E7C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F946F3CDE1B40D36E22E310B /* Pods-PactSwiftExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -403,6 +486,7 @@
 		};
 		A150D8B81A830E41006E7C2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8BE67EDE0310E0CBDBFA5B /* Pods-PactSwiftExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -417,6 +501,7 @@
 		};
 		A150D8BA1A830E41006E7C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B88E77085A23A9114FB5263 /* Pods-PactSwiftExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -437,6 +522,7 @@
 		};
 		A150D8BB1A830E41006E7C2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1ED70F94FC1076BF90DE9A /* Pods-PactSwiftExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

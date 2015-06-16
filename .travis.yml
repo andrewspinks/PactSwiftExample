@@ -3,13 +3,13 @@ osx_image: beta-xcode6.3
 before_install:
 - scripts/import_keychain.sh
 - brew update
-- brew install carthage
-- carthage update
 - gem instal xcpretty
-- gem install pact-mock_service -v 0.3.0
+- gem install pact-mock_service -v 0.5.5
+- gem install cocoapods
+- pod update
 script:
 - set -o pipefail
-- xcodebuild -project PactSwiftExample.xcodeproj -scheme PactSwiftExample clean test -sdk iphonesimulator | xcpretty -c
+- xcodebuild -workspace PactSwiftExample.xcworkspace -scheme PactSwiftExample clean test -sdk iphonesimulator | xcpretty -c
 after_script: scripts/delete_keychain.sh
 env:
   global:

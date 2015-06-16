@@ -46,7 +46,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "PATH=/opt/boxen/rbenv/shims:$PATH&#10;&quot;$SRCROOT&quot;/Carthage/Checkouts/pact-consumer-swift/scripts/start_server.sh">
+               scriptText = "PATH=/opt/boxen/rbenv/shims:$PATH&#10;&quot;$SRCROOT&quot;/Pods/PactConsumerSwift/scripts/start_server.sh">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -64,7 +64,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "PATH=/opt/boxen/rbenv/shims:$PATH&#10;&quot;$SRCROOT&quot;/Carthage/Checkouts/pact-consumer-swift/scripts/stop_server.sh">
+               scriptText = "PATH=/opt/boxen/rbenv/shims:$PATH&#10;&quot;$SRCROOT&quot;/Pods/PactConsumerSwift/scripts/scripts/stop_server.sh">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -108,7 +108,8 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A150D8961A830E41006E7C2F"
@@ -126,7 +127,8 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A150D8961A830E41006E7C2F"
