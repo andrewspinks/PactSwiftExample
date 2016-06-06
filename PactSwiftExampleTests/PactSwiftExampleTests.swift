@@ -13,7 +13,7 @@ class PactSwiftExampleTests: XCTestCase {
     let expectation = expectationWithDescription("Pacts are verified")
     helloProvider = MockService(provider: "Hello Provider", consumer: "Hello Consumer", done: { result in
       XCTAssertEqual(result, PactVerificationResult.Passed)
-      expectation!.fulfill()
+      expectation.fulfill()
     })
     helloClient = HelloClient(baseUrl: helloProvider!.baseUrl)
   }
@@ -23,7 +23,6 @@ class PactSwiftExampleTests: XCTestCase {
   }
 
   func testItSaysHello() {
-    var hello = "not Goodbye"
     helloProvider!.uponReceiving("a request for hello")
                   .withRequest(method:.GET, path: "/sayHello")
                   .willRespondWith(status: 200, headers: ["Content-Type": "application/json"], body: ["reply": "Hello"])
