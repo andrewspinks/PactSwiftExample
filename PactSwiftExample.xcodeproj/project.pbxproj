@@ -18,6 +18,7 @@
 		A150D8BF1A8315B9006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
 		A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */; };
 		A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
+		A1C3413E1D682F480067567A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C3413D1D682F480067567A /* Nimble.framework */; };
 		A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		A150D8BC1A831561006E7C2F /* HelloClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloClient.swift; sourceTree = "<group>"; };
 		A150D8BE1A8315B9006E7C2F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
+		A1C3413D1D682F480067567A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C3413E1D682F480067567A /* Nimble.framework in Frameworks */,
 				A105FC921D05235000ACBFBD /* Result.framework in Frameworks */,
 				A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */,
 				A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */,
@@ -75,6 +78,7 @@
 		A150D88E1A830E41006E7C2F = {
 			isa = PBXGroup;
 			children = (
+				A1C3413D1D682F480067567A /* Nimble.framework */,
 				A105FC911D05235000ACBFBD /* Result.framework */,
 				A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */,
 				A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */,
@@ -257,6 +261,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/PactConsumerSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			outputPaths = (
 			);

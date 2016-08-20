@@ -10,11 +10,7 @@ class PactSwiftExampleTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
-    let expectation = expectationWithDescription("Pacts are verified")
-    helloProvider = MockService(provider: "Hello Provider", consumer: "Hello Consumer", done: { result in
-      XCTAssertEqual(result, PactVerificationResult.Passed)
-      expectation.fulfill()
-    })
+    helloProvider = MockService(provider: "Hello Provider", consumer: "Hello Consumer")
     helloClient = HelloClient(baseUrl: helloProvider!.baseUrl)
   }
 
@@ -34,8 +30,6 @@ class PactSwiftExampleTests: XCTestCase {
         testComplete()
       }
     }
-
-    waitForExpectationsWithTimeout(10) { (error) in }
   }
 
   func test404Error() {
@@ -55,7 +49,5 @@ class PactSwiftExampleTests: XCTestCase {
         }
       )
     }
-
-    waitForExpectationsWithTimeout(10) { (error) in }
   }
 }
