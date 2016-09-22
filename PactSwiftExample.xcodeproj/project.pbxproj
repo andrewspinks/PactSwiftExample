@@ -190,9 +190,11 @@
 					A150D8961A830E41006E7C2F = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 33BWA4SWQK;
+						LastSwiftMigration = 0800;
 					};
 					A150D8AB1A830E41006E7C2F = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = A150D8961A830E41006E7C2F;
 					};
 				};
@@ -413,6 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -430,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -449,6 +453,7 @@
 				INFOPLIST_FILE = PactSwiftExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PactSwiftExample.app/PactSwiftExample";
 			};
 			name = Debug;
@@ -465,6 +470,7 @@
 				INFOPLIST_FILE = PactSwiftExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PactSwiftExample.app/PactSwiftExample";
 			};
 			name = Release;
