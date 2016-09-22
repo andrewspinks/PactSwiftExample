@@ -7,7 +7,7 @@ before_install:
 - gem install pact-mock_service -v 0.9.0
 script:
 - set -o pipefail
-- xcodebuild -project PactSwiftExample.xcodeproj -scheme PactSwiftExample clean test -sdk iphonesimulator | xcpretty -c
+- xcodebuild -project PactSwiftExample.xcodeproj -scheme PactSwiftExample clean test -destination 'platform=iOS Simulator,OS=10.0,name=iPhone 6' -sdk iphonesimulator | xcpretty -c
 after_script: scripts/delete_keychain.sh
 env:
   global:
