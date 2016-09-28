@@ -36,3 +36,5 @@ tmp
 #
 # Pods/
 Carthage/
+
+test_output
