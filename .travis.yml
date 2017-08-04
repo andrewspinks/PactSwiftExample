@@ -6,7 +6,6 @@ before_install:
 - gem install xcpretty
 - gem install pact-mock_service -v 2.1.0
 - gem update fastlane --no-ri --no-rdoc --no-document
-- bundle install
 - brew update
 - carthage checkout
 script:
