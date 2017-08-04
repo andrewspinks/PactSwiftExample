@@ -10,7 +10,7 @@ before_install:
 - carthage checkout
 script:
 - set -o pipefail
-- scan
+- fastlane scan
 after_script: scripts/delete_keychain.sh
 env:
   global:
