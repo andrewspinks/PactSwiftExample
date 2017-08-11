@@ -19,8 +19,10 @@ open class HelloClient {
     }
   }
 
-  open func findFriendsByAgeAndChild(_ friendsResponse: @escaping (Array<String>) -> Void) {
-    Alamofire.request("\(baseUrl)/friends", parameters: [ "age" : "30", "child" : "Mary" ] )
+  open func findFriendsByAgeAndChild(age: String,
+                                     child: String,
+                                     friendsResponse: @escaping (Array<String>) -> Void) {
+    Alamofire.request("\(baseUrl)/friends", parameters: [ "age" : age, "child" : child ] )
     .responseJSON { (response) in
       print(response)
       if let jsonResult = response.result.value as? Dictionary<String, AnyObject> {
@@ -33,15 +35,15 @@ open class HelloClient {
     Alamofire.request("\(baseUrl)/unfriendMe", method: .put)
       .responseJSON { (response) in
         print(response)
-	switch response.result {
-	  case .success:
+        switch response.result {
+          case .success:
             if let jsonResult = response.result.value as? Dictionary<String, String> {
               successResponse(jsonResult)
             }
           case .failure(let error):
             print(error)
             errorResponse(response.response!.statusCode)
-	}
+        }
     }
   }
 }
