@@ -6,7 +6,7 @@ See the Pact Swift library for more details. [PactConsumerSwift library][pact-co
 ## Installation with Carthage
 
 ### Install the [pact-mock_service](https://github.com/bethesque/pact-mock_service)
-  `gem install pact-mock_service -v 0.3.0`
+  `gem install pact-mock_service -v 2.1.0`
 
 ### Add the PactConsumerSwift library to your project
 - Add `github "DiUS/pact-consumer-swift` to your Cartfile

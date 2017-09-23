@@ -21,12 +21,33 @@ class PactSwiftExampleTests: XCTestCase {
   func testItSaysHello() {
     helloProvider!.uponReceiving("a request for hello")
                   .withRequest(method:.GET, path: "/sayHello")
-                  .willRespondWith(status: 200, headers: ["Content-Type": "application/json"], body: ["reply": "Hello"])
+                  .willRespondWith(status: 200,
+                                   headers: ["Content-Type": "application/json"],
+                                   body: ["reply": "Hello"])
 
     //Run the tests
-    helloProvider!.run{ (testComplete) -> Void in
+    helloProvider!.run { (testComplete) -> Void in
       self.helloClient!.sayHello { (response) in
         XCTAssertEqual(response, "Hello")
+        testComplete()
+      }
+    }
+  }
+  
+  func testItReturnsFriendsByAgeAndChild() {
+    // Setup mock request and expected response
+    helloProvider!.uponReceiving("a request for friends")
+                  .withRequest(method: .GET,
+                               path: "/friends",
+                               query: ["age": "30", "child": "Mary J"])
+                  .willRespondWith(status: 200,
+                                   headers: ["Content-Type": "application/json"],
+                                   body: ["friends": ["Clyde", "Edith", "John"]])
+    
+    // Run the test
+    helloProvider!.run { (testComplete) -> Void in
+      self.helloClient!.findFriendsByAgeAndChild(age: "30", child: "Mary J") { (response) in
+        XCTAssertEqual(response, ["Clyde", "Edith", "John"])
         testComplete()
       }
     }
