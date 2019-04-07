@@ -5,8 +5,9 @@ See the Pact Swift library for more details. [PactConsumerSwift library][pact-co
 
 ## Installation with Carthage
 
-### Install the [pact-mock_service](https://github.com/bethesque/pact-mock_service)
-  `gem install pact-mock_service -v 2.1.0`
+### Install Pact Mock Service
+
+Install the [pact-ruby-standalone][pact-mock-service-standalone] as per installation instructions.
 
 ### Add the PactConsumerSwift library to your project
 - Add `github "DiUS/pact-consumer-swift` to your Cartfile
@@ -41,3 +42,4 @@ See the Pact Swift library for more details. [PactConsumerSwift library][pact-co
 See PactSwifExampleTests.swift for examples of writing Pact tests in Swift. For Objective-C see [Pact ObjectiveC Example](https://github.com/andrewspinks/PactObjectiveCExample)
 
 [pact-consumer-swift]: https://github.com/DiUS/pact-consumer-swift
+[pact-mock-service-standalone]: https://github.com/pact-foundation/pact-ruby-standalone
