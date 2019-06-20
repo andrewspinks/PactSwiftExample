@@ -1,17 +1,7 @@
 language: objective-c
 osx_image: xcode10.2
-before_install:
-- scripts/import_keychain.sh
-- carthage update --no-use-binaries  --platform iOS
-- gem install xcpretty
-- gem install pact-mock_service -v 2.12.0
-- gem update fastlane --no-document
-- brew update
-- carthage checkout
-script:
-- set -o pipefail
-- fastlane scan
-after_script: scripts/delete_keychain.sh
+before_install: scripts/install_deps.sh
+script: scripts/build.sh
 env:
   global:
     secure: mz2fk26fqCtHzOuu3qQMEuva3HWKLlko48lUW+H3OuB2AQqtqwE2Nn4I4NDbcL1y/zm8pbh/wwwEesDolkR6DIesJUHPSL2dcdyRb5RZ1Em+K/GN2UJYHEk4coeJGgm/aFp9vSUX3nuwjtoDjyU9XcTHnVfGHDNP2vzbTt79eFc=
