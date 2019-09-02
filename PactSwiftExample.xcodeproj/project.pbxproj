@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A105FC921D05235000ACBFBD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A105FC911D05235000ACBFBD /* Result.framework */; };
 		A150D89D1A830E41006E7C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89C1A830E41006E7C2F /* AppDelegate.swift */; };
 		A150D89F1A830E41006E7C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89E1A830E41006E7C2F /* ViewController.swift */; };
 		A150D8A21A830E41006E7C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A01A830E41006E7C2F /* Main.storyboard */; };
@@ -65,7 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C3413E1D682F480067567A /* Nimble.framework in Frameworks */,
-				A105FC921D05235000ACBFBD /* Result.framework in Frameworks */,
 				A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */,
 				A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */,
 				A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */,
@@ -265,7 +263,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PactConsumerSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			outputPaths = (
