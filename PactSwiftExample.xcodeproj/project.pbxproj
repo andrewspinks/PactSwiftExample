@@ -18,7 +18,6 @@
 		A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */; };
 		A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
 		A1C3413E1D682F480067567A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C3413D1D682F480067567A /* Nimble.framework */; };
-		A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A105FC911D05235000ACBFBD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		A150D8971A830E41006E7C2F /* PactSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D89B1A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A150D89C1A830E41006E7C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +45,6 @@
 		A150D8BE1A8315B9006E7C2F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
 		A1C3413D1D682F480067567A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +61,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C3413E1D682F480067567A /* Nimble.framework in Frameworks */,
-				A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */,
 				A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */,
 				A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */,
 			);
@@ -77,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				A1C3413D1D682F480067567A /* Nimble.framework */,
-				A105FC911D05235000ACBFBD /* Result.framework */,
-				A1C5AC011A8B2E3C00EC6DF0 /* BrightFutures.framework */,
 				A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */,
 				A150D8BE1A8315B9006E7C2F /* Alamofire.framework */,
 				A150D8991A830E41006E7C2F /* PactSwiftExample */,
@@ -262,7 +256,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PactConsumerSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			outputPaths = (
